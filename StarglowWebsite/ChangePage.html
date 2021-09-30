@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>StarGlow</title>
+        <meta name="description" content="An educational webpage addressing light pollution">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body id="ChangePg">
+    
+<!-- Navigation Bar-->
+        <div class="navbar">
+            <ul>
+                <li><a id="Title" href="StarGlow.html">Starglow</a></li>
+                <li><a href="StarGlow.html">Home</a></li>
+                <li><a href="InfoPage.html">Info</a></li>
+                <li><a href="ChangePage.html">Change</a></li>
+            </ul>
+        </div>
+
+<!-- Parallax star effect. Source code https://matthew.wagerfield.com/parallax/  -->
+        <div> 
+            <div class="container" id="ChangeParallax">
+                <ul id="scene">
+                    <li class="layer" data-depth="0.2"><img class="stars" src="images/starbase.png"></li>
+                    <li class="layer" data-depth="0.4"><img class="stars" src="images/starbtm.png"></li>
+                    <li class="layer" data-depth="0.6"><img class="stars" src="images/starmid.png"></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <script src="deploy/parallax.js"></script>
+        <script>
+
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
+        </script>
+
+
+<!-- Splash screen with centered box -->
+        <div class ="changetext">
+            <div class="changeborder">
+                <div class="centertext">
+                    <a href=#LightPollution><h1 id="ChangeTitle">How Can I Help?</h1></a>
+                </div>
+            </div>
+        </div>
+
+<!-- Section 1: Ourselves-->
+        <div class="ChangeSection">
+            <div class="ChangeText" id="planet1">
+                <p>So, light pollution isn't great... now, what can we do about it?</p>
+                <br>
+                <br>
+                <h1>Starting with Ourselves</h1>
+                <ul>
+                    <li>
+                        Cut down on light usage. It’s simple! Turn off lights when you leave the room, use motion sensors on outside lights rather than keeping them on all night.
+                    </li>
+                    <li>
+                        Control light trespass. When buying outdoor lights make sure you are using an appropriate voltage and light coverage for the area you want to light. Ideally, lights would have shields to minimize light trespass.
+                    </li>
+                    <li>
+                        Using the right lights - colour matters! Blue light illuminate the night sky the most - this means that using LEDs and white light sources are not ideal. Lights with less blue light and warmer colours are preferred such as LPS or HPS lights are
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<!-- Section 2: Larger Scale Change-->
+
+        <div class="ChangeSection">
+            <div class="ChangeText" id="planet2">
+                <h1>Reaching For The Stars</h1>
+                    <p>We can’t to it all ourselves. The big companies with no respect to the natural environment are even more responsible for the increase of light pollution. Company buildings that keep their lights on all night, use inapproprite outdoor light 
+                        tures, neon lights and LED billboards are all contributors to light pollution.
+                        <br>
+                        <br>
+                        LED street lights have be popularised and favoured over light pollution friendly options like LPS and HPS lighting. Streetlights lack shields and illuminate more than needed and have light trespasses to the sky. If we implement LPS lighting with properly shielding, we can make huge step towards decreasing light pollution.
+                        <br>
+                        <br>
+                        <a href="https://www.savingourstars.org/petitions">Saving Our Stars Petitions</a>
+                        <br>Find your country/town in this website to find petitions to change how your town addresses light pollution. It’s worked before, it can work again now! Let’s make a change.
+
+                    </p>
+            </div>
+        </div>
+
+<!-- Section 3: More Link-->
+        <div class="ChangeSection">
+            <div class="ChangeText" id="planet3">
+                <h1>Don't Stop There!</h1>
+                <p>The change you can make doesn't end there. Here are more petitions aimed to restore the night sky! If you have the time, please sign them! It doesn't take too long at all and your signature can make a large difference.</p>
+                <ul>
+                    <li><a href="https://addup.sierraclub.org/campaigns/protect-the-night/petition">Add Up Campaign</a></li>
+                    <li><a href="https://darksky.salsalabs.org/supporting_pmt_form/index.html">Donate to IDA</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

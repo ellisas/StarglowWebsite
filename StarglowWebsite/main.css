@@ -1,0 +1,323 @@
+/* Importing fonts */
+@font-face {
+  font-family: Rolest;
+  src: url(fonts/Rolest.otf);
+}
+
+@font-face {
+  font-family: Karla;
+  src: url(fonts/Karla.ttf);
+}
+
+/* Setting default text */
+*{
+  margin: 0 0 0 0;
+  color: white;
+  font-family: Karla;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.5);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #151027;  
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color:rgb(0, 0, 0, 0);
+  box-shadow: 0px 20px 5px -20px white;
+  width: 100%;
+  padding: 2vh 0 1vh 0;
+  position: fixed;
+  z-index: 9999;
+  overflow-x: hidden; 
+}
+
+.navbar ul {
+  display: flex;
+  padding-right: 80px;
+  padding-left: 80px;
+  list-style-type: none;
+}
+
+.navbar a {
+  font-family: Karla;
+  float: right;
+  font-size: 20px;
+  padding: 0px 15px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  text-shadow:
+    0 0 2px white,
+    0 0 5px white;
+}
+
+.navbar a:hover {
+  transform: scale(1.05);   
+  text-shadow:
+    0 0 6px white,
+    0 0 9px white;
+}
+
+.navbar ul li:first-child {
+  margin-right: auto;
+}
+
+/* PAGE 1: Homepage */
+#Title {
+  font-family: Rolest;
+  font-size: 30px;
+}
+
+#Home {
+  max-width: 100vw;
+  overflow-x: hidden; 
+}
+/* Parallax stars */
+#bg {
+  background-image: url("images/homebg.jpg");
+  height: 125vh;
+  width: 100vw;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stars {
+  height: 100vh;
+  width: 120%;
+  background-position: center;
+  background-repeat: repeat-x;
+  overflow-x: hidden; 
+  z-index: -999;
+}
+
+.starsbtm {
+  z-index: -999;
+  width: 150%;
+}
+
+.starstext {
+  height: 100vh;
+  width: auto;
+  padding-left:100px;
+}
+
+
+/* Homepage contents */
+.HomePlanet{
+  height: 25vh;
+  width: 100vw;
+  position: static;
+  border-radius: 50% 50% 0 0;
+  background-color: #151027;
+  margin-top: -20vh;
+  z-index: 100;
+}
+
+.hometext{
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.hometext h1{
+  color: white;
+  font-size: 3.5vw;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+  display: inline-block;
+}
+
+.hometext p{
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.hometext img{
+  float: right;
+  width: 40vw;
+  margin-top: -200px;
+}
+
+/*PAGE 2: INFO */
+
+#InfoPageParallax {
+  position: fixed;
+  z-index: -10;
+  width: 300vw;
+}
+
+#InfoPg{
+  background-image: url("images/infobg.jpg");
+  height: 100vh;
+  width: 400vw;
+  background-repeat: repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+/* Horizontal scrolling set up */
+.container{
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden; 
+  position:absolute;
+  z-index: 100;
+}
+
+.container .InfoSect{
+  width: 100vw;
+  max-height: 100vh;
+}
+
+/* Page 2 Contents */
+.InfoSect p{
+  text-align: justify;
+  font-size: 25px;
+}
+
+.InfoSect h1{
+  font-size: 40px;
+}
+
+.SectBox {
+  margin-top: 20vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.SectBox img{
+  height: 300px;
+  padding-left: 30px;
+  float: right;
+}
+
+#floatright {
+  float: right;
+  font-size: 20px;
+}
+
+#floatleft{
+  float: left;
+  padding-right: 50px;
+  padding-left: -10px;
+  height: 400px;
+}
+
+/*PAGE 3: CHANGE */
+#ChangeParallax{
+  position: fixed;
+  z-index: -999;
+}
+
+#ChangePg{
+  background: url("images/spacebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Centered box */
+.changetext{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.changeborder{
+  border: 5px solid white;
+  padding: 10px;
+  width: 40%;
+  height: 30%;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centertext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ChangeTitle {
+  font-size: 40px;
+  border: none;
+  text-decoration: none;
+}
+
+#ChangeTitle:hover{
+  text-shadow:
+  0 0 2px white,
+  0 0 4px white;
+}
+
+/* Page 3 Contents */
+.ChangeText {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 20px;
+  padding: 50px 30px 50px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: justify;
+}
+
+.ChangeText h1{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.ChangeSection a:hover{
+  color: #cd877e;
+}
+
+.ChangeSection{
+  padding-bottom: 30px;
+}
+
+/* Planet colourization*/
+#planet1 {
+  background-color: #151027;
+}
+
+#planet2 {
+  background-color: #271014;
+}
+
+#planet3 {
+  background-color: #5b556f;
+}

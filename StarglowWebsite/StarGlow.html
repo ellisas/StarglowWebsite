@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>StarGlow</title>
+        <meta name="description" content="An educational webpage addressing light pollution">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body id="Home">
+    
+<!-- Navigation bar-->
+        <div class="navbar">
+            <ul>
+                <li><a id="Title" href="StarGlow.html">Starglow</a></li>
+                <li><a href="StarGlow.html">Home</a></li>
+                <li><a href="InfoPage.html">Info</a></li>
+                <li><a href="ChangePage.html">Change</a></li>
+            </ul>
+        </div>
+    
+<!-- Parallax star effect. Source code https://matthew.wagerfield.com/parallax/  -->
+        <div id="bg">
+            <div class="container">
+                <ul id="scene">
+                    <li class="layer" data-depth="0.1"><img class="starsbtm" src="images/starbase.png"></li>
+                    <li class="layer" data-depth="0.2"><img class="stars" src="images/starbtm.png"></li>
+                    <li class="layer" data-depth="0.4"><img class="stars" src="images/starmid.png"></li>
+                    <li class="layer" data-depth="0.8"><img class="stars" src="images/startop.png"></li>
+                    <li class="layer" data-depth="0"><img class="starstext" src="images/startext.png" alt="Make A Wish; fixing light pollution, one shooting star at a time. keep going and make a wish."></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Older version using deplot works best here -->
+        <script src="deploy/parallax.js"></script>
+        <script>
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
+        </script>
+
+<!-- Site content -->
+        <div class="HomePlanet"></div>
+        <div class="hometext">
+            <h1>WELCOME TO STARGLOW</h1>
+            <p><img src="images/newzealand.png">Have you ever look at the night sky and wished on a shooting star? What do you wish for? With light pollution obscuring the natural glow of the night stars, very soon, we won't see anymore shooting stars to wish on. We can't rely on the hopeful promise of a shooting star to make the stars shine brighter. We need to face light pollution head on - for the betterment of our stars, our animals and for us. Let's make those wishes come true - right here on StarGlow</p>
+        </div>
+
+    </body>
+</html>

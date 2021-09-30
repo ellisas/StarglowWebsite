@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>StarGlow</title>
+        <meta name="description" content="An educational webpage addressing light pollution">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body id="InfoPg">
+    
+<!-- Navigation bar -->
+        <div class="navbar">
+            <ul>
+                <li><a id="Title" href="StarGlow.html">Starglow</a></li>
+                <li><a href="StarGlow.html">Home</a></li>
+                <li><a href="InfoPage.html">Info</a></li>
+                <li><a href="ChangePage.html">Change</a></li>
+            </ul>
+        </div>
+
+<!-- Parallax star effect. Source code https://matthew.wagerfield.com/parallax/  -->
+        <div> 
+            <div class="container" id="InfoPageParallax">
+                <ul id="scene">
+                    <li class="layer" data-depth="0.2"><img class="starsbtm" src="images/starbase.png"></li>
+                    <li class="layer" data-depth="0.4"><img class="stars" src="images/starbtm.png"></li>
+                    <li class="layer" data-depth="0.6"><img class="stars" src="images/starmid.png"></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="deploy/parallax.js"></script>
+        <script>
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
+        </script>
+
+<!-- Sections of content: Info section -->
+        <div class="container">
+            <section class="InfoSect">
+                <div class="SectBox">
+                    <h1 id="LightPollution">Light Pollution</h1>
+                    <p>What is light pollution? Light pollution is the inapprioriate and excessive use of artificial light. This is light that is added unnecessarily and do not serve a proper purpose. We see light pollution everyday, from inefficient streetlights that light the sky up more than the streets, unnecessary lights being lit when no one is using it and the glow of the sky with the accumulation of excessive light sources in the city. Light pollution could be significantly reduced if we used light efficiently and excess light could be reduced.
+                        <br>
+                        <br>
+                        Scroll on to learn more →
+                    </p>
+                </div>
+            </section>
+
+<!--Effect On The Sky section-->
+            <section class="InfoSect">
+                <div class="SectBox">
+                    <h1 id="EffectSky">Effect On The Sky</h1>
+                        <p><img src="images/bigdipper.png">The night sky is a natural treasure that has existed and been treasured for all the years that humans have existed on Earth. Humans in time have used the night sky to navigate the globe, discover the universe, walk on the moon and develop science. With the night sky comes wonder, inspiration and beauty. Everyone should be able to star-gaze and wonder at the vastness of the universe - in the future and right now.
+                            <br>
+                            <br>
+                            The pollution of light obscures the light from the stars in our sky. Depending on the intensity of the light pollution, certain star monuments will be invisible to the human eye. Most notably, key celestial figures like the Milky Way, the Northern Star or the Big Dipper will no longer be visible at increasing light levels. 
+                        </p>
+                </div>
+            </section>
+
+<!--EcologicalImpact section-->
+            <section class="InfoSect">
+                <div class="SectBox">
+                    <h1 id="EffectAnimals">Ecological Impact</h1>
+                    <p id="floatright"><img id="floatleft"src="images/turtles.png">Light pollution is harmful not only to our night sky but also in ecology and animal behaviour. Light affects animals in multiple ways that affect how they survive in their environment which can ber very detrimental.
+                        <br>
+                        <br>
+                        Animals have innate responses to light which no longer benefit them in the modern world as it had benefited them in the past. Animals with certain directional responses will be lead astray from ambient lighting. Take sea turtle hatchlings for example. When hatched, baby turtles have a positive phototropic response to light as this used to lead them towards the ocean. In the modern day, turtle eggs that hatch on the lighted beaches will instinctively move towards the lights emitted by the street lamps and away from the ocean. This endangers the young turtles and cause them to be severely disoriented.
+                        <br>
+                        <br>
+                        Night-time lighting is also an issue as it messes with ecology and animal activity in nocturnal and diurnal animals (especially nocturnal). Light pollution may extend the active times of diurnal animals which benefits the animal but puts their prey at a disadvantage. Nocturnal animals will be disrupted as they are not used to bright lights at the dark times when they are active. This can cause them to be disoriented or have shorter active times.
+                    </p>
+                </div>
+            </section>
+
+<!--Effect On Humans section -->
+            <section class="InfoSect">
+                <div class="SectBox">
+                    <h1 id="EffectHuman">Human Impact</h1>
+                        <p><img src="images/humans.png">Humans are used to the day-night cycle of the Earth and the disruption of artificial light in naturally dark hours can be damaging to human health. The cycle of day and night controls certain body hormones.
+                        <br>
+                        <br>
+                        At night, between 10pm - 4am in natural dark light, the body releases the hormone melatonin. Melatonin regulates sleep circadian rhythms and is secreted in low levels (zero) of light when detected by the retina and sends a signal through the optic nerve. Melatonin allows delta sleep (deep and restorative sleep) to occur. During the daylight hours, melatonin is converted into serotonin. Light active at night will delay the release of our sleep hormones and disrupt our circadian cycle. We need our regular sleep hours as our bodies needs that time to repair damage, fight infection and disease.
+                        </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
